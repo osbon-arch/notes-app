@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>notes</title>
+    {% load static%}
+    <link
+      rel="stylesheet"
+      href="{% static 'css/styles.css'%}"
+      type="text/css"
+    />
+  </head>
+  <body>
+    
+    <ul id="links">
+      <li><a href="{% url 'baseapp:index'%}">homepage</a></li>
+      <li><a href="{% url 'baseapp:topics'%}">Topics</a></li>
+      {%if user.is_authenticated%}
+        <p id="username">Hello {{user.username}}.</p>
+        <a id="logout-link"href="{% url 'users:logout' %}">Log out</a>
+      {%else%}
+        <li><a href="{% url 'users:register' %}">Register</a> </li>
+
+        <li><li><a href="{% url 'users:login' %}">Log in</a></li></li>  
+      {%endif%}
+    </ul>
+   
+
+    {% block content %} {% endblock content%}
+  </body>
+</html>

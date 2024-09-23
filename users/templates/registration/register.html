@@ -1,0 +1,15 @@
+{% extends "baseapp/base.html" %}
+{%block content%}
+    <form method="post" action="{% url 'users:register'%}">
+        {%csrf_token%}
+        <label for="Username">username</label><br>
+        <input type="text" name="username">
+        <label for="password">password</label>
+        <input type="password" name="password1" >
+        <label for="password">password confirmation</label>
+        <input type="password" name="password2" >
+
+        <button  id="login-button"name="submit">Register</button>
+        <input type="hidden" name="next" value="{url 'baseapp:index'}">
+    </form>
+{%endblock content%}

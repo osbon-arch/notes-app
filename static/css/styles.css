@@ -1,0 +1,144 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+#links{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-decoration: none;
+    padding: 7px;
+    text-align: center;
+    
+
+
+}
+#links>li{
+    
+    padding: 5px;
+    list-style-type: none;
+    text-decoration: none;
+    background: rgb(131, 131, 158);
+    border-radius: 10px;
+    margin-left: 10px;
+    color: white;
+    text-align: center;
+   
+    
+    
+
+
+}
+#username{
+    background: rgb(17, 214, 34);
+    border-radius: 10px;
+    padding:5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#logout-link{
+    background: rgb(131, 131, 158);
+    border-radius: 10px;
+   padding: 5px;
+    
+
+}
+
+:any-link{
+    
+    text-decoration: none;
+    color:black;
+}
+h1{
+    font-size: 4rem;
+
+
+}
+
+.homepage{
+    background: rgb(206, 167, 174);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: capitalize;
+    text-shadow: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    padding: 50px;
+    margin-top: 100px;
+}
+#topics{
+    list-style-type: none;
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#topics>li{
+    margin-left: 20px;
+    background: rgb(131, 131, 158);
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+
+}
+#topics_tittle{
+    background: rgb(94, 94, 129);
+    padding: 10px;
+}
+#entry>li{
+    background: rgb(119, 119, 168);
+    list-style-type: numbers;
+    border-radius:0.5rem ;
+    padding: 5px;
+    margin-top: 5px;
+}
+#text-entry{
+
+    text-transform: uppercase;
+    background: rgb(105, 105, 151);
+    width: fit-content;
+    border-radius: 5px;
+    padding: 3px;
+    margin-left: 50%;
+}
+form{
+    background: rgb(105, 105, 151);
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 10px;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    height: 300px;
+    margin:auto;
+}
+input{
+    border: 0px none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+#login-button{
+    margin-top: 5px;
+    border: 0px solid;
+    border-radius: 5px;
+    background: green;
+    padding: 10px;
+    color:white;
+}
+
+
+
+
+
+
+

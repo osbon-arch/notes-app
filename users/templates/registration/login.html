@@ -1,0 +1,18 @@
+{% extends "baseapp/base.html" %}
+{% block content %}
+  {%if form.errors%}
+    <p>your username and password didnot match</p>
+  {%endif%}
+  <form  id="form"method="post"action="{% url 'users:login'%}">
+    {% csrf_token %}
+    <label for="Username">username</label><br>
+    <input type="text" name="username">
+    <label for="password">password</label>
+    <input type="password" name="password" >
+
+    <button  id="login-button"name="submit">Log in</button>
+    <input type="hidden" name="next"
+        value="{% url 'baseapp:index' %}" />
+
+  </form>
+{%endblock content %}
